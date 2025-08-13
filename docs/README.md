@@ -4,7 +4,6 @@ Welcome to the documentation for the **Degrees** project, part of CS50 AI 2024. 
 This documentation provides an overview, setup instructions, usage details, and insights into the code.
 
 
-
 ## Overview
 
 The core of the project involves finding the shortest path of on-screen collaborations between two actors. This is achieved by modeling the problem as a graph search problem:
