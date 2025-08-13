@@ -8,7 +8,7 @@ This documentation provides an overview, setup instructions, usage details, and 
 
 This project is a fantastic application of knowledge representation and logical inference in artificial intelligence.
 
-1. Game Setup and Mechanics 🎲
+1. Game Setup and Mechanics
 Board Representation: The game typically uses a grid (e.g., 8x8, 10x10) with some squares hiding mines.
 
 Squares: Each square can be:
@@ -31,7 +31,7 @@ make_safe_move(): The AI chooses a guaranteed safe square to click.
 
 make_random_move(): If no safe moves can be logically determined, the AI might resort to a random (but un-marked) move.
 
-2. Artificial Intelligence (AI) Core 🧠
+2. Artificial Intelligence (AI) Core
 The AI's intelligence is built around maintaining and updating a knowledge base about the game board.
 
 Knowledge Base: The AI maintains a set of logical "sentences" or "clauses" that represent its current understanding of the board. Each sentence relates a set of unknown cells to a count of how many mines are among them.
@@ -56,7 +56,7 @@ If a sentence states "There are 0 mines in S", then all cells in set S are guara
 
 If a sentence states "There are ∣S∣ mines in S" (where ∣S∣ is the number of cells in the set), then all cells in set S are guaranteed to be mines.
 
-3. Game Flow for the AI 🔁
+3. Game Flow for the AI
 Initial Move: The AI typically makes a random safe move to start (often the first click in Minesweeper is safe by default, or the project might define a way for the AI to pick an initial safe spot).
 
 Process Revealed Information: Whenever a square is clicked and reveals a number:
