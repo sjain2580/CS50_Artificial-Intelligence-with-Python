@@ -57,7 +57,7 @@ Students typically need to demonstrate that both methods yield similar PageRank 
 
 - **Author**: Sakshi Jain
 - **Course**: CS50's Introduction to Artificial Intelligence with Python
-- **Repository**: https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python/tree/degrees-project
+- **Repository**: https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python/tree/pagerank-project
 
 ## Installation
 
