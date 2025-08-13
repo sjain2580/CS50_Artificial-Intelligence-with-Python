@@ -4,12 +4,11 @@ Welcome to the documentation for the **Pagerank** project, part of CS50 AI 2024.
 This documentation provides an overview, setup instructions, usage details, and insights into the code.
 
 
-
 ## Overview
 
 The project requires students to implement two different approaches to calculating PageRank, both based on fundamental concepts of probability and graph theory:
 
-1. Data Representation 📊
+1. Data Representation
 The project provides a simplified "corpus" of web pages, typically represented by a directory containing text files. Each file represents a web page and contains links to other pages within the corpus.
 
 The program needs to parse these files to build a data structure (e.g., a dictionary or graph representation) that maps each page to the set of pages it links to.
@@ -39,33 +38,16 @@ A base probability (derived from the damping factor and the total number of page
 
 The algorithm starts with an initial arbitrary PageRank distribution (e.g., all pages having equal PageRank) and then iteratively updates these values until they converge (i.e., the changes between iterations fall below a small threshold).
 
-The core formula for PageRank PR(p) of a page p is:
+The core formula for PageRank $PR(p)$ of a page $p$ is:
 
-PR(p)= 
-N
-1−d
-​
- +d 
-i∈L(p)
-∑
-​
-  
-NumLinks(i)
-PR(i)
-​
- 
+$$PR(p) = \frac{1 - d}{N} + d \sum_{i \in L(p)} \frac{PR(i)}{NumLinks(i)}$$
 
 Where:
-
-d is the damping factor.
-
-N is the total number of pages in the corpus.
-
-L(p) is the set of pages that link to page p.
-
-PR(i) is the PageRank of a page i that links to p.
-
-NumLinks(i) is the number of outbound links from page i.
+* $d$ is the damping factor.
+* $N$ is the total number of pages in the corpus.
+* $L(p)$ is the set of pages that link to page $p$.
+* $PR(i)$ is the PageRank of a page $i$ that links to $p$.
+* $NumLinks(i)$ is the number of outbound links from page $i$.
 
 A special case usually handled: If a page has no outbound links, it's assumed to link to all pages in the corpus (including itself) with equal probability.
 
@@ -76,6 +58,7 @@ Students typically need to demonstrate that both methods yield similar PageRank 
 - **Author**: Sakshi Jain
 - **Course**: CS50's Introduction to Artificial Intelligence with Python
 - **Repository**: https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python/tree/degrees-project
+
 ## Installation
 
 To set up and run the Heredity project locally, follow these steps:
