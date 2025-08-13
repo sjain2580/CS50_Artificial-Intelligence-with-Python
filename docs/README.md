@@ -26,7 +26,6 @@ To set up and run the Heredity project locally, follow these steps:
    ```bash
    git clone https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python.git
    cd sjain2580/CS50_Artificial-Intelligence-with-Python.git
-   git checkout ai50/projects/2024/x/pagerank
 
 2. **Install Dependencies**:
    Ensure Python 3.12 (or later) is installed:
