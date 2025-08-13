@@ -17,8 +17,7 @@ The goal is to find the minimum number of steps (movies and intervening actors) 
 
 - **Author**: Sakshi Jain
 - **Course**: CS50's Introduction to Artificial Intelligence with Python
-- **Repository**: https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python/tree/ai50/projects/2024/x/degrees
-
+- **Repository**: https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python/tree/degrees-project
 ## Installation
 
 To set up and run the Heredity project locally, follow these steps:
