@@ -19,7 +19,7 @@ The goal is to find the minimum number of steps (movies and intervening actors) 
 - **Repository**: https://github.com/sjain2580/CS50_Artificial-Intelligence-with-Python/tree/degrees-project
 ## Installation
 
-To set up and run the Heredity project locally, follow these steps:
+To set up and run the Degrees project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
@@ -42,7 +42,7 @@ To set up and run the Heredity project locally, follow these steps:
 
 
 ## Contributing
-Contributions to improve the Heredity project are welcome! To contribute:
+Contributions to improve the Degrees project are welcome! To contribute:
 
 1. **Fork the repository**.
 2. **Create a new branch**:
