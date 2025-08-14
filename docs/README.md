@@ -86,7 +86,7 @@ If safe_moves is empty, but there are still unrevealed cells, the AI might resor
 
 ## Installation
 
-To set up and run the Heredity project locally, follow these steps:
+To set up and run the Minesweeper project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
@@ -109,7 +109,7 @@ To set up and run the Heredity project locally, follow these steps:
 
 
 ## Contributing
-Contributions to improve the Heredity project are welcome! To contribute:
+Contributions to improve the Minesweeper project are welcome! To contribute:
 
 1. **Fork the repository**.
 2. **Create a new branch**:
