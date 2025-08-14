@@ -73,7 +73,7 @@ The primary algorithm used to solve the CSP is **backtracking search**:
 
 ## Installation
 
-To set up and run the Heredity project locally, follow these steps:
+To set up and run the Crossword project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
@@ -96,7 +96,7 @@ To set up and run the Heredity project locally, follow these steps:
 
 
 ## Contributing
-Contributions to improve the Heredity project are welcome! To contribute:
+Contributions to improve the Crossword project are welcome! To contribute:
 
 1. **Fork the repository**.
 2. **Create a new branch**:
