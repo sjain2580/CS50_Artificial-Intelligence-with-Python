@@ -7,7 +7,7 @@ This documentation provides an overview, setup instructions, usage details, and 
 
 ## Overview
 
-This project is an excellent introduction to classification algorithms in machine learning, particularly using the scikit-learn library. It involves data preprocessing, model training, and evaluation.
+This project is an excellent introduction to classification algorithms in machine learning, particularly using the **scikit-learn** library. It involves data preprocessing, model training, and evaluation.
 
 1. Dataset
 The project typically uses a provided dataset (often a .csv file), where each row represents a user session and columns represent different features. A crucial column is the "Revenue" or "Purchase" column, which is the target variable (whether the user made a purchase, usually a binary 0/1 or True/False).
