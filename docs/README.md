@@ -95,7 +95,7 @@ To set up and run the Shopping project locally, follow these steps:
 
 
 ## Contributing
-Contributions to improve the Heredity project are welcome! To contribute:
+Contributions to improve the Shopping project are welcome! To contribute:
 
 1. **Fork the repository**.
 2. **Create a new branch**:
