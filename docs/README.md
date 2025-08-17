@@ -1,6 +1,6 @@
 # Parser Project Documentation
 
-Welcome to the documentation for the **Parser** project, part of CS50 AI 2024. The main objective of this project implement a program that takes an English sentence as input and produces its most likely **syntactic parse tree**. This tree represents the sentence's hierarchical grammatical structure according to a given set of grammatical rules. The challenge lies in handling **ambiguity** – where a sentence can have multiple valid parse trees – by using probabilities associated with the grammatical rules.
+Welcome to the documentation for the **Parser** project, part of CS50 AI 2024. The main objective of this project is to implement a program that takes an English sentence as input and produces its most likely **syntactic parse tree**. This tree represents the sentence's hierarchical grammatical structure according to a given set of grammatical rules. The challenge lies in handling **ambiguity** – where a sentence can have multiple valid parse trees – by using probabilities associated with the grammatical rules.
 This documentation provides an overview, setup instructions, usage details, and insights into the code.
 
 
