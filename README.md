@@ -1,7 +1,6 @@
-## **CS50's Introduction to Artificial Intelligence with Python**
+# **CS50's Introduction to Artificial Intelligence with Python**
 
 This repository serves as a comprehensive portfolio for my solutions and explorations throughout Harvard's CS50's Introduction to Artificial Intelligence with Python course. Each project within this course provided hands-on experience with fundamental AI concepts, from search algorithms and knowledge representation to machine learning and natural language processing.
-
 
 ## **Course Overview**
 
@@ -21,9 +20,9 @@ CS50 AI with Python delves into the core principles of artificial intelligence, 
 
 - **Natural Language Processing**: Tokenization, Parsing, Attention Mechanisms.
 
-
 ## **Projects**
-Each project in this repository resides on its own dedicated branch and includes a README.md file with specific details about its implementation, challenges, and solutions. 
+
+Each project in this repository resides on its own dedicated branch and includes a README.md file with specific details about its implementation, challenges, and solutions.
 Below is a list of the projects completed:
 
 **1) Degrees**: Implemented a "Six Degrees of Kevin Bacon" style to find the shortest path between any two actors by choosing a sequence of movies that connects them.
@@ -44,14 +43,14 @@ Below is a list of the projects completed:
 
 **9) Nim**: Implemented an AI agent that learns to play the game of Nim optimally using reinforcement learning.
 
-**10) Traffic**: Implemented a convolutional neural network for classifying traffic signs in a photogrph. 
+**10) Traffic**: Implemented a convolutional neural network for classifying traffic signs in a photogrph.
 
 **11) Parser**: Implemented a natural language parser to parse sentences and extract noun phrases.
 
 **12) Attention**: Implemented an AI to predict a masked word in a text sequence.
 
-
 ## **Technologies Used**
+
 Python 3
 
 - numpy: For numerical operations.
