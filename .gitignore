@@ -1,0 +1,6 @@
+venv/
+venv_attention_new/
+*.pyd
+*.dll
+__pycache__/
+*.pyc
