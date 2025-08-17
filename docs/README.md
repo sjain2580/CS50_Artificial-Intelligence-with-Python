@@ -3,7 +3,6 @@
 Welcome to the documentation for the **Crossword** project, part of CS50 AI 2024. The main objective of this project is to write a Python program that takes a crossword puzzle structure and a list of words, then uses AI techniques to fill the grid optimally to create a valid and solvable crossword puzzle. The AI must ensure that all words fit the given structure and that intersecting letters match.
 This documentation provides an overview, setup instructions, usage details, and insights into the code.
 
-
 ## Overview
 
 This project is a classic application of **Constraint Satisfaction Problems (CSPs)** and **backtracking search** in artificial intelligence.
@@ -50,13 +49,13 @@ The primary algorithm used to solve the CSP is **backtracking search**:
 
 **Value Ordering**: Once a variable is chosen, try assigning a value (a word) from its domain. Heuristics for value ordering can help:
 
-    - Least Constraining Value: Try words that rule out the fewest values from the domains of neighboring variables.
+- Least Constraining Value: Try words that rule out the fewest values from the domains of neighboring variables.
 
 **Constraint Propagation**: After assigning a value:
 
-    - Inference: Propagate the effects of the assignment. This means reducing the domains of any other variables that share intersecting cells. If a word is placed, its intersecting letters constrain the possible words for the intersecting slots.
+- Inference: Propagate the effects of the assignment. This means reducing the domains of any other variables that share intersecting cells. If a word is placed, its intersecting letters constrain the possible words for the intersecting slots.
 
-    - Failure Detection: If at any point, an assignment leads to an empty domain for another variable (meaning no word can fit there), then the current path of assignments has failed.
+- Failure Detection: If at any point, an assignment leads to an empty domain for another variable (meaning no word can fit there), then the current path of assignments has failed.
 
 **Backtracking**: If a path fails, "backtrack" to the most recent decision point (the last variable assignment) and try a different word for that variable. If all words for that variable have been tried, backtrack further.
 
