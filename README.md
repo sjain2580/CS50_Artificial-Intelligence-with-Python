@@ -39,15 +39,15 @@ The core of the project is building and training a Convolutional Neural Network 
 
    - Dropout Layer: A crucial regularization technique that randomly deactivates a percentage of neurons during training. This prevents the model from relying too heavily on specific features, thereby reducinng overfitting and improving the model's ability to generalize to new images.
 
-- Output Layer: A final Dense layer with 43 units (one for each category) and a softmax activation function. softmax outputs a probability distribution over the 43 classes, indicating the model's confidence for each sign type.
+   - Output Layer: A final Dense layer with 43 units (one for each category) and a softmax activation function. softmax outputs a probability distribution over the 43 classes, indicating the model's confidence for each sign type.
 
-- Compilation: The model is compiled with:
+   - Compilation: The model is compiled with:
 
-- Optimizer: Often adam, which efficiently adjusts model weights during training.
+   - Optimizer: Often adam, which efficiently adjusts model weights during training.
 
-- Loss Function: categorical_crossentropy, suitable for multi-class classification with one-hot encoded labels.
+   - Loss Function: categorical_crossentropy, suitable for multi-class classification with one-hot encoded labels.
 
-- Metrics: accuracy, to monitor the proportion of correctly classified signs during training and evaluation.
+   - Metrics: accuracy, to monitor the proportion of correctly classified signs during training and evaluation.
 
 4. **Evaluation**
 After training, the model's performance is evaluated on the separate testing set to assess its generalization capabilities. The key metric is accuracy, which indicates how often the model correctly predicts the traffic sign category.
