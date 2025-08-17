@@ -14,30 +14,30 @@ The project utilizes a dataset, like GTSRB, which is structured with a root dire
 2. Data Preprocessing
 Before a neural network can learn from images, the raw data requires significant preprocessing:
 
-- Image Loading: Images are loaded using cv2.imread.
+   - Image Loading: Images are loaded using cv2.imread.
 
-- Resizing: All images must be resized to a uniform dimension (e.g., 30x30 pixels) to ensure consistent input size for the CNN.
+   - Resizing: All images must be resized to a uniform dimension (e.g., 30x30 pixels) to ensure consistent input size for the CNN.
 
-- Channel Handling: Images are typically kept in their 3-channel color format (RGB/BGR), as color is a vital distinguishing feature for many traffic signs.
+   - Channel Handling: Images are typically kept in their 3-channel color format (RGB/BGR), as color is a vital distinguishing feature for many traffic signs.
 
-- Label Encoding: The integer labels (0-42) for each category need to be converted into a one-hot encoded format (e.g., category 5 becomes [0,0,0,0,0,1,0,...]). This is crucial for multi-class classification with a softmax output layer and categorical_crossentropy loss.
+   - Label Encoding: The integer labels (0-42) for each category need to be converted into a one-hot encoded format (e.g., category 5 becomes [0,0,0,0,0,1,0,...]). This is crucial for multi-class classification with a softmax output layer and categorical_crossentropy loss.
 
-- Splitting Data: The loaded data (images and labels) is divided into training and testing sets using sklearn.model_selection.train_test_split. The training set is used to teach the model, while the testing set evaluates its performance on unseen data to prevent overfitting.
+   - Splitting Data: The loaded data (images and labels) is divided into training and testing sets using sklearn.model_selection.train_test_split. The training set is used to teach the model, while the testing set evaluates its performance on unseen data to prevent overfitting.
 
 3. **Model Training (CNN)**
 The core of the project is building and training a Convolutional Neural Network (CNN). CNNs are highly effective for image recognition tasks because they can automatically learn hierarchical features from pixel data.
 
-- Layers: A typical CNN architecture for this project includes:
+   - Layers: A typical CNN architecture for this project includes:
 
-- Conv2D Layers: These are the primary feature extractors, applying filters to the image to detect patterns like edges, textures, and shapes. Rectified Linear Unit (relu) activation is commonly used for non-linearity.
+   - Conv2D Layers: These are the primary feature extractors, applying filters to the image to detect patterns like edges, textures, and shapes. Rectified Linear Unit (relu) activation is commonly used for non-linearity.
 
-- MaxPooling2D Layers: These layers reduce the spatial dimensions of the feature maps, which helps in reducing computation and making the learned features more robust to small variations in the image.
+   - MaxPooling2D Layers: These layers reduce the spatial dimensions of the feature maps, which helps in reducing computation and making the learned features more robust to small variations in the image.
 
-- Flatten Layer: Converts the 2D feature maps into a 1D vector to be fed into fully connected layers.
+   - Flatten Layer: Converts the 2D feature maps into a 1D vector to be fed into fully connected layers.
 
-- Dense (Hidden) Layers: Standard neural network layers that learn more abstract combinations of features.
+   - Dense (Hidden) Layers: Standard neural network layers that learn more abstract combinations of features.
 
-- Dropout Layer: A crucial regularization technique that randomly deactivates a percentage of neurons during training. This prevents the model from relying too heavily on specific features, thereby reducing overfitting and improving the model's ability to generalize to new images.
+   - Dropout Layer: A crucial regularization technique that randomly deactivates a percentage of neurons during training. This prevents the model from relying too heavily on specific features, thereby reducinng overfitting and improving the model's ability to generalize to new images.
 
 - Output Layer: A final Dense layer with 43 units (one for each category) and a softmax activation function. softmax outputs a probability distribution over the 43 classes, indicating the model's confidence for each sign type.
 
